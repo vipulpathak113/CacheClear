@@ -1,65 +1,76 @@
-
 <html>
-    <body>
-<p>Choose Data to remove</p>
+  <body>
+    <h2>Choose Data to remove</h2>
 
-<div>
-  <input type="checkbox" id="appcache" name="appcache">
-  <label for="appcache">App Cache</label>
-</div>
+    <div>
+      <input type="checkbox" id="appcache" name="appcache" />
+      <label for="appcache">App Cache</label>
+    </div>
 
-<div>
-  <input type="checkbox" id="cache" name="cache" checked>
-  <label for="cache">Cache</label>
-</div>
+    <div>
+      <input type="checkbox" id="cache" name="cache" checked />
+      <label for="cache">Cache</label>
+    </div>
 
-<div>
-    <input type="checkbox" id="cacheStorage" name="cacheStorage">
-    <label for="cacheStorage">Cache Storage</label>
-  </div>
+    <div>
+      <input type="checkbox" id="cacheStorage" name="cacheStorage" />
+      <label for="cacheStorage">Cache Storage</label>
+    </div>
 
-  <div>
-    <input type="checkbox" id="cookies" name="cookies">
-    <label for="cookies">Cookies</label>
-  </div>
+    <div>
+      <input type="checkbox" id="cookies" name="cookies" />
+      <label for="cookies">Cookies</label>
+    </div>
 
-  <div>
-    <input type="checkbox" id="downloads" name="downloads">
-    <label for="downloads">Downloads</label>
-  </div>
-  <div>
-    <input type="checkbox" id="fileSystems" name="fileSystems">
-    <label for="fileSystems">File Systems</label>
-  </div>
-  <div>
-    <input type="checkbox" id="formData" name="formData">
-    <label for="formData">Form Data</label>
-  </div>
-  <div>
-    <input type="checkbox" id="history" name="history">
-    <label for="history">History</label>
-  </div>
-  <div>
-    <input type="checkbox" id="indexedDB" name="indexedDB">
-    <label for="indexedDB">Indexed DB</label>
-  </div>
-  <div>
-    <input type="checkbox" id="localStorage" name="localStorage">
-    <label for="localStorage">Local Storage</label>
-  </div>
-  <div>
-    <input type="checkbox" id="pluginData" name="pluginData">
-    <label for="pluginData">Plugin Data</label>
-  </div>
-  <div>
-    <input type="checkbox" id="serviceWorkers" name="serviceWorkers">
-    <label for="serviceWorkers">Service Workers</label>
-  </div>
-  <div>
-    <input type="checkbox" id="webSQL" name="webSQL">
-    <label for="webSQL">Web SQL</label>
-  </div>
-  <script type="text/javascript" src="options.js"></script>
-</body>
+    <div>
+      <input type="checkbox" id="downloads" name="downloads" />
+      <label for="downloads">Downloads</label>
+    </div>
+    <div>
+      <input type="checkbox" id="fileSystems" name="fileSystems" />
+      <label for="fileSystems">File Systems</label>
+    </div>
+    <div>
+      <input type="checkbox" id="formData" name="formData" />
+      <label for="formData">Form Data</label>
+    </div>
+    <div>
+      <input type="checkbox" id="history" name="history" />
+      <label for="history">History</label>
+    </div>
+    <div>
+      <input type="checkbox" id="indexedDB" name="indexedDB" />
+      <label for="indexedDB">Indexed DB</label>
+    </div>
+    <div>
+      <input type="checkbox" id="localStorage" name="localStorage" />
+      <label for="localStorage">Local Storage</label>
+    </div>
+    <div>
+      <input type="checkbox" id="pluginData" name="pluginData" />
+      <label for="pluginData">Plugin Data</label>
+    </div>
+    <div>
+      <input type="checkbox" id="serviceWorkers" name="serviceWorkers" />
+      <label for="serviceWorkers">Service Workers</label>
+    </div>
+    <div>
+      <input type="checkbox" id="webSQL" name="webSQL" />
+      <label for="webSQL">Web SQL</label>
+    </div>
 
-  </html>
+    <h2>Choose Time Period</h2>
+
+    <select style="width: 280px" id="Mobility" name="Mobility">
+      <option selected="">Last Hour</option>
+      <option>Last 24 Hours</option>
+      <option value="new Date().getTime() - 604800000"
+        >Last 7 Days</option
+      >
+      <option>Last 4 Weeks</option>
+      <option>All Time</option>
+    </select>
+
+    <script type="text/javascript" src="options.js"></script>
+  </body>
+</html>

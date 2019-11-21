@@ -1,28 +1,25 @@
 {
-    "manifest_version": 2,
-    "name": "My Extension",
-    "version": "1.0",
-    "description": "Learning extension",
-    "browser_action": {
-            "default_title": "My extesnion",
-            "default_icon": "robot-prod.png",
-            "default_popup": "popup.html"},
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "Learning extension",
+  "browser_action": {
+    "default_title": "My extesnion",
+    "default_icon": "robot-prod.png",
+    "default_popup": "popup.html"
+  },
 
-    "permissions":[
-        "activeTab","storage","browsingData","history"
-    ]  ,
-    
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-      },
+  "permissions": ["activeTab", "storage", "browsingData", "history"],
 
-      "options_page": "options.html",
-      "icons": {
-        "16": "robot-prod.png",
-        "48": "robot-prod.png",
-        "128": "robot-prod.png"
-       }
-        
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
 
-    }
+  "options_page": "options.html",
+  "icons": {
+    "16": "robot-prod.png",
+    "48": "robot-prod.png",
+    "128": "robot-prod.png"
+  }
+}
