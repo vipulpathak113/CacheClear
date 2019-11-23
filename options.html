@@ -1,67 +1,129 @@
-<html>
-  <body>
-    <h2>Choose Data to remove</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Web Cleaner Options</title>
+  </head>
+  <body class="jumbotron container">
+    <h1 class="display-4">Web Cleaner</h1>
+    <img src="cleaning.png" height="120px" width="120px" />
+    <h3>Choose Data to remove</h3>
     <div id="checkboxes">
-    
-      <input type="checkbox" id="appcache" name="appcache" class="checkBox" />
-      <label for="appcache">App Cache</label>
-    
+      <div>
+        <input type="checkbox" id="appcache" name="appcache" class="checkBox" />
+        <label for="appcache">App Cache</label>
+      </div>
 
-    
-      <input type="checkbox" id="cache" name="cache" checked class="checkBox"/>
-      <label for="cache">Cache</label>
-    
+      <div>
+        <input
+          type="checkbox"
+          id="cache"
+          name="cache"
+          checked
+          class="checkBox"
+        />
+        <label for="cache">Cache</label>
+      </div>
 
-    
-      <input type="checkbox" id="cacheStorage" name="cacheStorage" class="checkBox" />
-      <label for="cacheStorage">Cache Storage</label>
-    
+      <div>
+        <input
+          type="checkbox"
+          id="cacheStorage"
+          name="cacheStorage"
+          class="checkBox"
+        />
+        <label for="cacheStorage">Cache Storage</label>
+      </div>
 
-    
-      <input type="checkbox" id="cookies" name="cookies" class="checkBox"/>
-      <label for="cookies">Cookies</label>
-    
-
-    
-      <input type="checkbox" id="downloads" name="downloads" class="checkBox"/>
-      <label for="downloads">Downloads</label>
-    
-    
-      <input type="checkbox" id="fileSystems" name="fileSystems" class="checkBox" />
-      <label for="fileSystems">File Systems</label>
-    
-    
-      <input type="checkbox" id="formData" name="formData" class="checkBox"/>
-      <label for="formData">Form Data</label>
-    
-    
-      <input type="checkbox" id="history" name="history" class="checkBox"/>
-      <label for="history">History</label>
-    
-    
-      <input type="checkbox" id="indexedDB" name="indexedDB" class="checkBox"/>
-      <label for="indexedDB">Indexed DB</label>
-    
-    
-      <input type="checkbox" id="localStorage" name="localStorage" class="checkBox"/>
-      <label for="localStorage">Local Storage</label>
-    
-    
-      <input type="checkbox" id="pluginData" name="pluginData" class="checkBox"/>
-      <label for="pluginData">Plugin Data</label>
-    
-    
-      <input type="checkbox" id="serviceWorkers" name="serviceWorkers" class="checkBox"/>
-      <label for="serviceWorkers">Service Workers</label>
-    
-    
-      <input type="checkbox" id="webSQL" name="webSQL" class="checkBox"/>
-      <label for="webSQL">Web SQL</label>
+      <div>
+        <input type="checkbox" id="cookies" name="cookies" class="checkBox" />
+        <label for="cookies">Cookies</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="downloads"
+          name="downloads"
+          class="checkBox"
+        />
+        <label for="downloads">Downloads</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="fileSystems"
+          name="fileSystems"
+          class="checkBox"
+        />
+        <label for="fileSystems">File Systems</label>
+      </div>
+      <div>
+        <input type="checkbox" id="formData" name="formData" class="checkBox" />
+        <label for="formData">Form Data</label>
+      </div>
+      <div>
+        <input type="checkbox" id="history" name="history" class="checkBox" />
+        <label for="history">History</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="indexedDB"
+          name="indexedDB"
+          class="checkBox"
+        />
+        <label for="indexedDB">Indexed DB</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="localStorage"
+          name="localStorage"
+          class="checkBox"
+        />
+        <label for="localStorage">Local Storage</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="pluginData"
+          name="pluginData"
+          class="checkBox"
+        />
+        <label for="pluginData">Plugin Data</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="serviceWorkers"
+          name="serviceWorkers"
+          class="checkBox"
+        />
+        <label for="serviceWorkers">Service Workers</label>
+      </div>
+      <div>
+        <input type="checkbox" id="webSQL" name="webSQL" class="checkBox" />
+        <label for="webSQL">Web SQL</label>
+      </div>
     </div>
 
-    <h2>Choose Time Period</h2>
+    <h3>Choose Time Period</h3>
 
-    <select style="width: 280px" id="time_period" name="time_period">
+    <select
+      class="custom-select"
+      style="width: 280px"
+      id="time_period"
+      name="time_period"
+    >
       <option value="last_hour" selected>Last Hour</option>
       <option value="last_24hour">Last 24 Hours</option>
       <option value="last_7days">Last 7 Days</option>
@@ -70,5 +132,10 @@
     </select>
 
     <script type="text/javascript" src="options.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

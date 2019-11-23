@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "My Extension",
+  "name": "Web Cleaner",
   "version": "1.0",
-  "description": "Learning extension",
+  "description": "Clean Cache, Cookies, History,etc on a single click.",
   "browser_action": {
-    "default_title": "My extesnion",
-    "default_icon": "robot-prod.png",
+    "default_title": "Web Cleaner",
+    "default_icon": "cleaning.png",
     "default_popup": "popup.html"
   },
 
@@ -18,8 +18,8 @@
 
   "options_page": "options.html",
   "icons": {
-    "16": "robot-prod.png",
-    "48": "robot-prod.png",
-    "128": "robot-prod.png"
+    "16": "cleaning.png",
+    "48": "cleaning.png",
+    "128": "cleaning.png"
   }
 }
